@@ -19,9 +19,10 @@ body{
 
 /* navigation bar */
 #navbar{
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 /*navigation bar: logo and image */
@@ -59,7 +60,7 @@ width: 100px;
     height:100%;
     width:100%;
     z-index:-1;
-    opacity:0.4;
+   opacity: 0.77;
   
 }
 
@@ -76,6 +77,11 @@ width: 100px;
     padding: 4px 25px;
     color:white;
     text-decoration: none;
+}
+
+.itm{
+    float:right
+    ;
 }
   
 #navbar ul li a:hover{
@@ -104,13 +110,19 @@ width: 100px;
     margin-top: 5px;
     justify-content: center;
     align-items: center;
-    height:490px;
+    height:650px;
+  
+
+
+
+  
+
 }
 
-#home::before{
+    #home::after{
     content: " ";
-    background-image: url('../bg2.jpg');
-    /* background-position: no-repeat center center/cover; */
+    background-image: url('../img/bg2.jpg');
+    /* background-position: no-repeat center center/cover;  */
     position: absolute;
     background-size: 100% auto;
     height: 100%;
@@ -119,7 +131,7 @@ width: 100px;
     left:0;
     z-index:-1;
     opacity:0.79;
-}
+}   
 
 #home h1{
     color:white;
@@ -185,7 +197,7 @@ width: 100px;
 
 #client-section::before{
     content: " ";
-    background-image: url('../bg1.jpg');
+    background-image: url('../img/bg1.jpg');
     background-position: no-repeat;
     position: absolute;
     background-size: 100% auto;
@@ -222,7 +234,7 @@ width: 100px;
 #contact::before{
     position: absolute;
     content: " ";
-    background-image: url('../cont.jpg');
+    background-image: url('../img/cont.jpg');
     background-position: no-repeat center center/cover;
     background-size: 100% auto;
     height:100%;
